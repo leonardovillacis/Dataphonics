@@ -11,17 +11,17 @@ DF is DataFrame object. Enter a list with the dataframe and all its variables, t
     Example: DF = dfJouzel_ = [Jdata , Jdata.age_calBP , Jdata.Temperature]
 
 TF is the TimeFrame object. Choose from the following list of time intervals with which data will be treated. Listen to your data at the rate you enter here.  
-      minimum: minimum resolution of the record
-      fifty: 50 years
-      lifetime: 80 years
-      country_time: 250 years
-      ocean_time: 1000 years
-      greek_time: 3000 years
-      civilization_time: 6000 years
-      Holocene_time: 10,000 years
-      Homo_sapiens:300,000 years
-      Million: 1,000,000 years
-      Homo_time: 3,000,000 years
+      minimum: minimum resolution of the record;
+      fifty: 50 years;
+      lifetime: 80 years;
+      country_time: 250 years;
+      ocean_time: 1000 years;
+      greek_time: 3000 years;
+      civilization_time: 6000 years;
+      Holocene_time: 10,000 years;
+      Homo_sapiens:300,000 years;
+      Million: 1,000,000 years;
+      Homo_time: 3,000,000 years;
 
 speed is the time per sound or data point in seconds. Default is 0.4.
 
