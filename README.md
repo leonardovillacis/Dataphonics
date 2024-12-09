@@ -55,6 +55,7 @@ volume_factor sets volume. Default is 0.005.
 Audio and plot will be saved to your computer. 
 
 Example Function input:
+
 SONIC(dfJouzel_,'civilization_time', plot_filename=r'D:\Jouzel.png',
      audio_filename=r'D:\Jouzel_audio.wav',
      ylabel='Temperature (°C)',title='EPICA Dome C Temperature')
