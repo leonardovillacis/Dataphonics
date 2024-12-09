@@ -60,6 +60,9 @@ SONIC(dfJouzel_,'civilization_time', plot_filename=r'D:\Jouzel.png',
      audio_filename=r'D:\Jouzel_audio.wav',
      ylabel='Temperature (°C)',title='EPICA Dome C Temperature')
 
+See youtube channel for more examples!
+
+https://www.youtube.com/@Dataphonics
 
 Happy listening!
 
