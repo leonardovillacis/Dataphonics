@@ -1,0 +1,23 @@
+'''
+Sources of CO2 data:
+
+Mauna Loa
+https://gml.noaa.gov/ccgg/trends/gl_data.html
+
+WAIS Ice cores
+https://www.ncei.noaa.gov/access/paleo-search/study/17975
+
+This code is used to listen to 800,000 years of CO2 data at 1,000-year intervals in on minute. 
+Download 'Full composite CO2.csv' file and insert file location to code. 
+Also change where you wish to save to your PC. 
+'''
+
+
+##CO2 composite
+CO2comp=pd.read_csv(r'D:\Full composite CO2.csv') #replace
+CO2comp_=[CO2comp,CO2comp.BP_year,CO2comp.CO2]
+
+
+SONIC(CO2comp_,'ocean_time',plot_filename=r'D:\CO2comp_HD.png',
+     audio_filename=r'D:\CO2compHD_audio.wav',ylabel='$CO_2$ (ppmv)',
+      title='Composite $CO_2$ record',speed=60/(800000/1000))
