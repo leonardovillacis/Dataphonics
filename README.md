@@ -5,7 +5,7 @@ Want to listen to your time series data? Here's how.
 Use the function SONIC with its many parameters to cater to you data structure.
 
 SONIC(DF, TF, speed=0.4, reverse_data=True, invert_data=False, save_audio=True, save_plot=True, plot_filename='plot.png', audio_filename='output.wav', 
-      xlabel="Years BP", ylabel="Values", title="Data Visualization", high_tone=650, low_tone=81.25, invert_yaxis=False, volume_factor=0.005)
+      xlabel="Years BP", ylabel="Values", title="Data Visualization", high_tone=650, low_tone=81.25, invert_yaxis=False, volume_factor=0.1)
 
 DF is DataFrame object. Enter a list with the dataframe and all its variables, the age variable, and the climate variable you wish to plot.
     Example: DF = dfJouzel_ = [Jdata , Jdata.age_calBP , Jdata.Temperature]
