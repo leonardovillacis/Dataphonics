@@ -14,7 +14,9 @@ TF is the TimeFrame object. Choose from the following list of time intervals wit
       minimum: minimum resolution of the record;
       fifty: 50 years;
       lifetime: 80 years;
+      century: 100 years;
       country_time: 250 years;
+      half_ocean_time: 500 years;
       ocean_time: 1000 years;
       greek_time: 3000 years;
       civilization_time: 6000 years;
@@ -49,7 +51,7 @@ low_tone assigns frequency of highest tone. Default is 81.25.
  
 invert_yaxis allows y axis to be flipped. Default is False.
  
-volume_factor sets volume. Default is 0.005.
+volume_factor sets volume. Default is 0.1.
 
 
 Audio and plot will be saved to your computer. 
