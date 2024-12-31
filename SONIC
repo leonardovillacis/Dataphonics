@@ -1,6 +1,6 @@
 def SONIC(DF, TF, speed = 0.4, reverse_data = True, invert_data = False, save_audio = True, save_plot = True, plot_filename = 'plot.png', 
           audio_filename = 'output.wav', xlabel = "Years BP", ylabel = "Values", title = "Data Visualization", high_tone = 650, low_tone = 81.25, invert_yaxis = False, 
-          volume_factor = 0.005):
+          volume_factor = 0.1):
     
     # Data input
     df = DF[0]
@@ -14,8 +14,12 @@ def SONIC(DF, TF, speed = 0.4, reverse_data = True, invert_data = False, save_au
         timeframe = 50        
     elif TF == 'lifetime':
         timeframe = 80
+    elif TF == 'century':
+        timeframe = 100
     elif TF == 'country_time':
         timeframe = 250
+    elif TF == 'half_ocean_time':
+        timeframe = 500
     elif TF == 'ocean_time':
         timeframe = 1000
     elif TF == 'greek_time':
@@ -31,7 +35,7 @@ def SONIC(DF, TF, speed = 0.4, reverse_data = True, invert_data = False, save_au
     elif TF == 'Homo_time':
         timeframe = 3000000
     
-    ########################################## Smoothing and Interpolation Functions
+########################################## Smoothing and Interpolation Functions
     def loc_eval(x, b):
         loc_est = 0
         for i in enumerate(b): loc_est += i[1] * (x ** i[0])
@@ -76,7 +80,7 @@ def SONIC(DF, TF, speed = 0.4, reverse_data = True, invert_data = False, save_au
         S1 = evalDF1.g
         A1 = evalDF1.v
         return A1, S1
-    ###############################################################################
+###############################################################################
 
     # Interpolation
     AgeS = np.arange(Age.min(), Age.max(), timeframe)
