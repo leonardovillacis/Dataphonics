@@ -7,33 +7,8 @@ def SONIC(DF, TF, speed = 0.4, reverse_data = True, invert_data = False, save_au
     Age = DF[1]
     values = DF[2]
     
-    # Select timeframe (e.g., lifespan for visualization)
-    if TF == 'minimum':
-        timeframe = Age.max() / len(values)  # Minimum resolution from record
-    elif TF == 'fifty':
-        timeframe = 50        
-    elif TF == 'lifetime':
-        timeframe = 80
-    elif TF == 'century':
-        timeframe = 100
-    elif TF == 'country_time':
-        timeframe = 250
-    elif TF == 'half_ocean_time':
-        timeframe = 500
-    elif TF == 'ocean_time':
-        timeframe = 1000
-    elif TF == 'greek_time':
-        timeframe = 3000        
-    elif TF == 'civilization_time':
-        timeframe = 6000
-    elif TF == 'Holocene_time':
-        timeframe = 10000
-    elif TF == 'Homo_sapiens':
-        timeframe = 300000
-    elif TF == 'Million':
-        timeframe = 1000000
-    elif TF == 'Homo_time':
-        timeframe = 3000000
+    # Select timeframe (e.g., years per sound for visualization)
+    timeframe = TF
     
 ########################################## Smoothing and Interpolation Functions
     def loc_eval(x, b):
