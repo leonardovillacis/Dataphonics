@@ -11,8 +11,9 @@ DF is DataFrame object. Enter a list with the dataframe and all its variables, t
     Example: DF = dfJouzel_ = [Jdata , Jdata.age_calBP , Jdata.Temperature]
 
 TF is the TimeFrame used to process data. Enter the time interval in years with which you want to hear your data. (e.g,. TF=1000 will produce a sound per thousand years of data). 
+Lower values may require more computing time.
 
-speed is the time per sound or data point in seconds. Default is 0.4.
+speed is the time per sound or data point in seconds. Default is 0.4. Lower values will play data at faster pace. 
 
 reverse_data allows to switch between listening from past to present or from present to past, according to data structure. Default is True.
 
